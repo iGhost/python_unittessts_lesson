@@ -1,5 +1,5 @@
 import re
-email_regex = r"[\w.]+@\w+\.\w+"
+email_regex = r"[\w.\+]+@\w+\.\w+"
 
 
 def is_correct_email(email):

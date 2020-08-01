@@ -17,3 +17,6 @@ class EmailFunctionTestCase(TestCase):
 
     def test_email_must_contain_at_sign(self):
         self.assertFalse(is_correct_email("aidana.yahoo.com"))
+
+    def test_email_should_be_able_to_contain_plus_sign(self):
+        self.assertTrue(is_correct_email("master+aalish@gmail.com"))
